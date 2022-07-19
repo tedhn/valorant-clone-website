@@ -401,7 +401,7 @@ button:hover {
   margin: auto;
   position: relative;
   z-index: 2;
-  margin: auto auto auto 35%;
+  margin: auto auto auto 15%;
   font-weight: 600;
 
 }
