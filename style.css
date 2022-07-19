@@ -178,7 +178,7 @@ button:hover {
 }
 
 .intro {
-  max-width: 80vw;
+  max-width: 1080px;
   margin: 64px auto;
   position: relative;
 }
@@ -272,6 +272,7 @@ button:hover {
 
 .agents {
   margin: 64px auto;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -281,16 +282,17 @@ button:hover {
 
 .agentsContainer {
   position: relative;
+  max-width: 1080px;
   display: flex;
   justify-content: space-around;
   gap: 48px;
   align-items: center;
-  max-width: 80vw;
   margin: auto;
 }
 
 .agentsImage {
   position: relative;
+  max-width: 640px;
   display: flex;
   align-items: center;
   flex: 1;
@@ -383,26 +385,24 @@ button:hover {
 }
 
 .map {
-
+  padding: 48px;
   position: relative;
-  min-height: 70vh;
 }
 
 .map img {
   position: absolute;
-  top: -150px;
+  top: 0;
   right: 0;
-  height: 90vh;
-  object-fit: contain;
-  object-position: top;
+  max-width: 960px;
   z-index: 1;
   pointer-events: none;
 }
 
 .map .content {
+  margin: auto;
   position: relative;
   z-index: 2;
-  margin: auto auto auto 10vw;
+  margin: auto auto auto 35%;
   font-weight: 600;
 
 }
@@ -416,7 +416,7 @@ button:hover {
 }
 
 .map .content .text {
-  width: 300px;
+  max-width: 300px;
 }
 
 .map .content h3 {
@@ -429,7 +429,7 @@ button:hover {
   line-height: 24px;
   font-size: 14px;
   font-weight: 600;
-  color: #818181;
+  color: #292C31;
   transition: all linear 0.3s;
   transition-delay: 0.3s;
 }
@@ -441,7 +441,6 @@ button:hover {
   font-weight: 700;
   text-transform: uppercase;
   background-color: #FF4656;
-  border: none;
   border: none;
   transition: transform linear 0.3s 0.6s, opacity linear 0.3s 0.6s, background-color linear 0.3s;
 
