@@ -21,7 +21,7 @@ button:hover {
 }
 
 .navBar {
-  padding: 16px;
+  padding: 1em;
   width: 100%;
   position: sticky;
   top: 0;
@@ -31,8 +31,8 @@ button:hover {
 }
 
 .logo {
-  width: 120px;
-  margin-left: 24px;
+  width: 7.5em;
+  margin-left: 1.5em;
   display: flex;
   align-items: center;
 }
@@ -42,7 +42,7 @@ button:hover {
 }
 
 .navOptions {
-  margin-left: 48px;
+  margin-left: 3em;
   width: 600px;
   display: flex;
   justify-content: space-around;
@@ -55,9 +55,9 @@ button:hover {
 }
 
 .navOptions li {
-  padding: 4px 12px;
+  padding: 0.25em 0.75em;
   position: relative;
-  border-bottom: 4px solid #FF4656;
+  border-bottom: 0.25em solid #FF4656;
 }
 
 .navOptions li::before {
@@ -69,7 +69,7 @@ button:hover {
   height: 100%;
   width: 100%;
   color: white;
-  border-bottom: 4px solid #292C31;
+  border-bottom: 0.25em solid #292C31;
   transition: 0.3s ease;
 }
 
@@ -83,7 +83,7 @@ button:hover {
 }
 
 .navOptions li:hover {
-  border-bottom: 4px solid #FF4656;
+  border-bottom: 0.25em solid #FF4656;
   cursor: pointer;
 }
 
@@ -100,7 +100,7 @@ button:hover {
   height: 80vh;
   display: block;
   position: relative;
-  margin-bottom: 48px;
+  margin-bottom: 3em;
 }
 
 .backgroundVideo video {
@@ -125,15 +125,15 @@ button:hover {
 }
 
 .title p {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
   transition: all linear 0.3s;
 }
 
 .title h1 {
-  margin: 32px;
+  margin: 2em;
   font-family: "v";
-  font-size: 84px;
+  font-size: 5rem;
   letter-spacing: 6px;
   transition: all linear 0.3s;
   transition-delay: 0.3s;
@@ -141,7 +141,7 @@ button:hover {
 
 .title button {
   width: 200px;
-  padding: 16px 32px;
+  padding: 1em 2em;
   color: white;
   font-weight: 700;
   text-transform: uppercase;
@@ -186,7 +186,7 @@ button:hover {
 
 .intro h2 {
   font-family: 'Oswald', sans-serif;
-  font-size: 122px;
+  font-size: 7.5rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -6px;
@@ -194,14 +194,14 @@ button:hover {
 }
 
 .intro .content {
-  padding: 48px;
+  padding: 3em;
   display: flex;
   justify-content: space-around;
-  gap: 48px;
+  gap: 3em;
 }
 
 .intro .text {
-  width: 400px;
+  max-width: 400px;
   font-weight: 600;
   color: #818181;
   margin: auto;
@@ -214,16 +214,16 @@ button:hover {
 
 
 .intro .text p {
-  margin: 24px 0;
-  line-height: 24px;
-  font-size: 14px;
+  margin: 1.5em 0;
+  line-height: 1.5em;
+  font-size: 0.85rem;
   transition: all linear 0.3s;
   transition-delay: 0.3s;
 }
 
 .intro .text button {
   width: 200px;
-  padding: 16px 32px;
+  padding: 1em 2em;
   color: white;
   font-weight: 700;
   text-transform: uppercase;
@@ -271,8 +271,7 @@ button:hover {
 }
 
 .agents {
-  margin: 64px auto;
-
+  margin: 4em auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -285,7 +284,7 @@ button:hover {
   max-width: 1080px;
   display: flex;
   justify-content: space-around;
-  gap: 48px;
+  gap: 3em;
   align-items: center;
   margin: auto;
 }
@@ -314,14 +313,14 @@ button:hover {
 .agents .content {
   width: 600px;
   color: white;
-  padding: 48px;
+  padding: 3em;
 }
 
 .agents .content h2 {
   width: 100px;
-  padding-bottom: 48px;
+  padding-bottom: 0.5em;
   font-family: 'Oswald', sans-serif;
-  font-size: 122px;
+  font-size: 7.5rem;
   font-weight: 700;
   line-height: 118px;
   letter-spacing: -6px;
@@ -337,9 +336,9 @@ button:hover {
 }
 
 .agents p {
-  margin: 48px 0;
+  margin: 3em 0;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 0.85em;
   font-weight: 600;
   transition: all linear 0.3s;
   transition-delay: 0.3s;
@@ -347,7 +346,7 @@ button:hover {
 
 .agents button {
   width: 200px;
-  padding: 16px 32px;
+  padding: 1em 2em;
   color: black;
   font-weight: 700;
   text-transform: uppercase;
@@ -385,7 +384,7 @@ button:hover {
 }
 
 .map {
-  padding: 48px;
+  padding: 3em;
   position: relative;
 }
 
@@ -409,7 +408,7 @@ button:hover {
 
 .map .content h2 {
   font-family: 'Oswald', sans-serif;
-  font-size: 122px;
+  font-size: 7.5rem;
   font-weight: 700;
   letter-spacing: -6px;
   transition: all linear 0.3s;
@@ -425,9 +424,9 @@ button:hover {
 }
 
 .map .content p {
-  margin: 48px 0;
+  margin: 3em 0;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 0.85rem;
   font-weight: 600;
   color: #292C31;
   transition: all linear 0.3s;
@@ -436,7 +435,7 @@ button:hover {
 
 .map .content button {
   width: 200px;
-  padding: 16px 32px;
+  padding: 1em 2em;
   color: white;
   font-weight: 700;
   text-transform: uppercase;
