@@ -9,6 +9,10 @@ const agentsTextELements = document.querySelector("#agentsText");
 const mapHeadingELements = document.querySelector("#mapHeading");
 const mapTextELements = document.querySelector("#mapText");
 
+const hamburgerIcon = document.querySelector(".hamburger");
+const mobileNav = document.querySelector(".hamburgerMenu");
+const closeIcon = document.querySelector(".closeIcon");
+
 window.addEventListener("scroll", (e) => {
 	animateText();
 });
@@ -24,6 +28,13 @@ window.addEventListener("load", (event) => {
 		childComponents[i].classList.remove("hidden");
 		childComponents[i].classList.add("show");
 	}
+});
+
+hamburgerIcon.addEventListener("click", () => {
+	mobileNav.classList.add("showMenu");
+});
+closeIcon.addEventListener("click", () => {
+	mobileNav.classList.remove("showMenu");
 });
 
 const animateText = () => {

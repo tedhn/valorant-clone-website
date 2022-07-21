@@ -47,7 +47,7 @@ button:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 12px;
+  font-size: 0.8rem;
   color: white;
   font-weight: 700;
   text-transform: uppercase;
@@ -85,6 +85,56 @@ button:hover {
 .navOptions li:hover {
   border-bottom: 0.25em solid #FF4656;
   cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  width: 1.5em;
+  color: white;
+}
+
+.hamburgerMenu {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  color: white;
+  height: 100vh;
+  transform: translateX(200px);
+  background-color: #292C31;
+  transition: transform ease-out 0.3s;
+}
+
+.showMenu {
+  transform: translateX(0);
+}
+
+.hamburgerMenu ul {
+  display: none;
+  font-size: 1rem;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.hamburgerMenu svg {
+  width: 1.5em;
+  color: white;
+}
+
+.hamburgerMenu .closeIcon {
+  text-align: right;
+}
+
+.hamburgerMenu li {
+  width: 200px;
+  line-height: 24px;
+  padding: 1.5em;
+  text-align: right;
+}
+
+.hamburgerMenu li:active {
+  color: #7b7b7b;
 }
 
 .backgroundVideo {
@@ -398,7 +448,7 @@ button:hover {
 }
 
 .map .content {
-  margin: auto;
+  max-width: 1080px;
   position: relative;
   z-index: 2;
   margin: auto auto auto 15%;
@@ -486,10 +536,10 @@ footer {
   align-items: center;
   padding: 18px;
   width: 100%;
-  font-size: 14px;
+  font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
-  gap: 24px;
+  gap: 1.5em;
   background-color: black;
 }
 
@@ -508,13 +558,15 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 24px;
+  padding: 1.5em;
+  max-width: 1080px;
+  margin: auto;
 }
 
 .mainfooter p {
   width: 60%;
-  padding: 12px;
-  font-size: 12px;
+  padding: 1em;
+  font-size: 0.7rem;
   text-align: center;
   color: #7b7b7b;
 }
@@ -523,15 +575,16 @@ footer {
 
 .mainfooter .links {
   width: 70%;
-  padding: 12px;
+  padding: 0.7rem;
   display: flex;
   justify-content: space-around;
   list-style-type: none;
 }
 
 .links li {
-  padding: 4px 8px;
+  padding: 0.2en 0.4em;
   border-radius: 5px;
+  font-size: 1rem
 }
 
 .links li:hover {
@@ -549,4 +602,233 @@ footer {
 .show {
   opacity: 1;
   transform: translateY(-20px);
+}
+
+@media (max-width: 640px) {
+  .navBar {
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navOptions {
+    display: none;
+  }
+
+  .title h1 {
+    font-size: 3rem;
+  }
+
+  .intro h2 {
+    font-size: 5rem;
+    text-align: left;
+    padding: 3rem;
+
+  }
+
+  .intro .content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .intro .text {
+    max-width: 100%;
+  }
+
+  .intro .gameplayVideo {
+    width: 100%
+  }
+
+  .agentsContainer {
+    flex-direction: column-reverse;
+    gap: 0;
+    width: 100%;
+  }
+
+  .agentsContainer .agentsImage {
+    max-width: 100%;
+  }
+
+
+  .reyna {
+    display: none;
+  }
+
+  .yoru {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    transform: translate(0);
+  }
+
+  .agents .content {
+    width: 100%;
+  }
+
+  .agents .content h2 {
+    font-size: 5rem;
+    width: 100%;
+  }
+
+  .map {
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .map img {
+    position: static;
+    max-width: 100%;
+  }
+
+  .map .content {
+    padding: 3em;
+    margin: 0;
+  }
+
+  .map .content h2 {
+    font-size: 5rem;
+  }
+
+  .map .content .text {
+    max-width: 100%;
+  }
+
+  .subfooter {
+    font-size: 0.7rem;
+  }
+
+  .mainfooter p {
+    width: 100%;
+  }
+
+  .mainfooter .links {
+    width: 100%;
+  }
+
+  .mainfooter .links li {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navBar {
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navOptions {
+    display: none;
+  }
+
+  .hamburgerMenu ul {
+    display: block;
+  }
+
+  .intro h2 {
+    font-size: 5rem;
+    text-align: left;
+    padding: 3rem;
+
+  }
+
+  .intro .content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .intro .text {
+    max-width: 100%;
+  }
+
+  .intro .gameplayVideo {
+    width: 100%
+  }
+
+  .agentsContainer {
+    flex-direction: column-reverse;
+    gap: 0;
+    width: 100%;
+  }
+
+  .agentsContainer .agentsImage {
+    max-width: 100%;
+  }
+
+
+  .reyna {
+    display: none;
+  }
+
+  .yoru {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    transform: translate(0);
+  }
+
+  .agents .content {
+    width: 100%;
+  }
+
+  .agents .content h2 {
+    font-size: 5rem;
+    width: 100%;
+  }
+
+  .map {
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .map img {
+    position: static;
+    max-width: 100%;
+  }
+
+  .map .content {
+    padding: 3em;
+    margin: 0;
+  }
+
+  .map .content h2 {
+    font-size: 5rem;
+  }
+
+  .map .content .text {
+    max-width: 100%;
+  }
+
+  .subfooter {
+    font-size: 0.7rem;
+  }
+
+  .mainfooter p {
+    width: 100%;
+  }
+
+  .mainfooter .links {
+    width: 100%;
+  }
+
+  .mainfooter .links li {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+@media (min-width: 1536px) {
+
+  .map .content {
+    margin: 0;
+    position: relative;
+    left: 35%;
+  }
 }
