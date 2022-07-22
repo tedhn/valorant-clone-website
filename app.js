@@ -31,6 +31,7 @@ window.addEventListener("load", (event) => {
 });
 
 hamburgerIcon.addEventListener("click", () => {
+	mobileNav.style.display = "block";
 	mobileNav.classList.add("showMenu");
 });
 closeIcon.addEventListener("click", () => {
